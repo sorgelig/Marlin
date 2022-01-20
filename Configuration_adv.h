@@ -620,7 +620,7 @@
 #define COOLER_FAN_PIN -1
 
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 80
-#define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed
+#define EXTRUDER_AUTO_FAN_SPEED 200   // 255 == full speed
 #define CHAMBER_AUTO_FAN_TEMPERATURE 30
 #define CHAMBER_AUTO_FAN_SPEED 255
 #define COOLER_AUTO_FAN_TEMPERATURE 18
@@ -1781,10 +1781,10 @@
   // By default the type of panel is automatically detected.
   // Enable one of these options if you know the panel type.
   //#define CHIRON_TFT_STANDARD
-  //#define CHIRON_TFT_NEW
+  #define CHIRON_TFT_NEW
 
   // Enable the longer Anycubic powerup startup tune
-  //#define AC_DEFAULT_STARTUP_TUNE
+  #define AC_DEFAULT_STARTUP_TUNE
 
   /**
    * Display Folders
@@ -1796,7 +1796,7 @@
    * - When used with the "new" panel, folder names will also have '.gcode' appended to their names.
    *   This hack is currently required to force the panel to show folders.
    */
-  #define AC_SD_FOLDER_VIEW
+  //#define AC_SD_FOLDER_VIEW
 #endif
 
 //
@@ -2796,7 +2796,7 @@
   #endif
 
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT      800
+    #define E0_CURRENT      1000
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
