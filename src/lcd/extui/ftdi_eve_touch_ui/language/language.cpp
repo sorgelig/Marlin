@@ -19,10 +19,9 @@
  *   location: <https://www.gnu.org/licenses/>.                             *
  ****************************************************************************/
 
-#include "../../../../MarlinCore.h"
 
+#include "../../../../MarlinCore.h"
 #if ENABLED(TOUCH_UI_FTDI_EVE)
- #include "language.h"
- 
- uint8_t lang = 0;
+  #include "language.h"
+  uint8_t lang = 0;
 #endif
