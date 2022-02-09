@@ -51,7 +51,7 @@
 #if FET_ORDER_EEB
   #define MOSFET_C_PIN                         8  // BED
 #elif FET_ORDER_EFB
-  #if DISABLED(ANYCUBIC_LCD_CHIRON)
+  #if DISABLED(ANYCUBIC_CHIRON)
     #define MOSFET_C_PIN                       8
   #else
     #define MOSFET_C_PIN                      45
@@ -95,14 +95,14 @@
 #if ENABLED(ANYCUBIC_4_MAX_PRO_ENDSTOPS)
   #define X_MAX_PIN                           43
   #define Y_STOP_PIN                          19
-#elif EITHER(ANYCUBIC_LCD_CHIRON, ANYCUBIC_LCD_I3MEGA)
+#elif EITHER(ANYCUBIC_CHIRON, ANYCUBIC_LCD_I3MEGA)
   #define Y_STOP_PIN                          42
   #define Z2_MIN_PIN                          43
   #ifndef Z_MIN_PROBE_PIN
     #define Z_MIN_PROBE_PIN                    2
   #endif
   #ifndef FIL_RUNOUT_PIN
-    #if ENABLED(ANYCUBIC_LCD_CHIRON)
+    #if ENABLED(ANYCUBIC_CHIRON)
       #define FIL_RUNOUT_PIN                  33
     #else
       #define FIL_RUNOUT_PIN                  19
